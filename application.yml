@@ -1,0 +1,15 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          zk-nodes: "localhost:2182" 
+          brokers: "localhost:9092"
+          auto-create-topics: true
